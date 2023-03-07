@@ -1,4 +1,4 @@
-# andromeda-gtk3
+# Everblush-gtk3
   Everblush theme for libadwaita and [adw-gtk3](https://github.com/lassekongo83/adw-gtk3)
 
   Colors from [Everblush theme](https://github.com/Everblush)
@@ -15,3 +15,4 @@
   1. Open folder
   2. Open terminal and type `sh install.sh`
   3. Reboot
+
