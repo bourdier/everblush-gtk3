@@ -1,0 +1,81 @@
+/*
+
+  Everblush theme for libadwaita and adw-gtk3 
+  https://github.com/lassekongo83/adw-gtk3
+
+  Colors from Everblush's Code Theme
+  https://github.com/Everblush
+
+*/
+
+/* Global color definitions */
+
+@define-color window_bg_color #141b1e;
+@define-color window_fg_color #f8f8f2;
+@define-color view_bg_color #232a2d;
+@define-color view_fg_color @window_fg_color;
+@define-color accent_bg_color #6cbfbf;
+@define-color accent_color @accent_bg_color;
+@define-color headerbar_bg_color @window_bg_color;
+@define-color headerbar_fg_color @window_fg_color;
+@define-color popover_bg_color #232a2d;
+@define-color popover_fg_color @view_fg_color;
+@define-color dialog_bg_color @popover_bg_color;
+@define-color dialog_fg_color @popover_fg_color;
+@define-color card_bg_color rgba(255, 255, 255, 0.08);
+@define-color card_fg_color @window_fg_color;
+
+/* More customizations */
+
+button.titlebutton {
+  /* GTK3 */
+  color: transparent;
+  min-width: 14px;
+  min-height: 14px;
+}
+button.titlebutton:backdrop {
+  opacity: 0.5;
+}
+
+windowcontrols > button {
+  /* GTK4 */
+  color: transparent;
+  min-width: 14px;
+  min-height: 14px;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 5px;
+}
+windowcontrols > button > image {
+  padding: 0;
+}
+
+button.titlebutton.close,
+windowcontrols > button.close {
+  background-color: #e57474;
+}
+
+button.titlebutton.close:hover,
+windowcontrols > button.close:hover {
+  background-color: #e68d8d;
+}
+
+button.titlebutton.maximize,
+windowcontrols > button.maximize {
+  background-color: #8ccf7e;
+}
+
+button.titlebutton.maximize:hover,
+windowcontrols > button.maximize:hover {
+  background-color: #cbe7b9;
+}
+
+button.titlebutton.minimize,
+windowcontrols > button.minimize {
+  background-color: #e5c76b;
+}
+
+button.titlebutton.minimize:hover,
+windowcontrols > button.minimize:hover {
+  background-color: #e6d08e;
+}
